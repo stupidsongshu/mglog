@@ -260,6 +260,23 @@ let interfaceMap61 = {
 }
 
 let jnd = {
+  // 短信API
+  'Jnd.getMessageNumSource': '获取短信来源列表',
+  'Jnd.getMessageNumber': '获取号码库列表',
+  'Jnd.getMessageSendTask': '获取任务列表',
+  'Jnd.getMessageSendTemplate': '获取号码库列表',
+  'Jnd.getMessageTemplate': '获取短信模板列表',
+  'Jnd.getProvider': '获取号码商列表',
+  'Jnd.getSender': '获取发送者列表',
+  'Jnd.updateMessageNumSource': '创建或更新短信来源',
+  'Jnd.updateMessageNumber': '创建或更新号码库',
+  'Jnd.updateMessageSendTask': '创建或更新任务',
+  'Jnd.updateMessageSendTemplate': '创建或更新号码库',
+  'Jnd.updateMessageTemplate': '创建或更新短信模板',
+  'Jnd.updateProvider': '创建或更新号码商',
+  'Jnd.updateSendMessage': '手动发送',
+  'Jnd.updateSender': '创建或更新发送者',
+  // save-info-controller
   'Jnd.baseInfo': '基本信息',
   'Jnd.bindCard': '绑卡',
   'Jnd.blackCheck': '黑名单检测',
@@ -271,29 +288,68 @@ let jnd = {
   'Jnd.operatorDynamicCode': '运营商动态验证码',
   'Jnd.operatorLogin': '运营商登录',
   'Jnd.queryHistory': '黑名单检测历史数据',
+  // union-register-controller
+  'Jnd.hitTest': '联合注册撞库测试接口',
+  'Jnd.registerTest': '联合注册撞库测试接口',
+  'Jnd.unionRegister': '联合注册接口',
+  'Jnd.unionRegisterTest': '联合注册测试接口',
+  // api-controller
+  'Jnd.applyCheck': '准入检测',
+  'Jnd.applyQuery': '订单状态查询',
+  'Jnd.applySubmit': '提交申请',
+  'Jnd.confirmBankCard': '确认绑卡',
+  'Jnd.confirmContract': '确认合同',
+  'Jnd.getBindCardList': '获取卡列表',
+  'Jnd.getContract': '获取合同',
+  'Jnd.uploadBasicInfo': '上传基本信息',
+  'Jnd.uploadFacePhoto': '上传活体照片',
+  'Jnd.verifyCard': '传绑卡信息发验证码',
+  // signin-controller
   'Jnd.checkMarketMsg': '检查交易信息',
   'Jnd.market': '兑换',
   'Jnd.marketMsg': '商城信息',
   'Jnd.signinAction': '签到',
   'Jnd.signinTask': '七天签到任务',
+  // account-controller
   'Jnd.checkToken': '验证登陆状态',
   'Jnd.dynamicCode': '获取验证码',
+  'Jnd.forceLoginCheck': '强制登录检测',
   'Jnd.login': '登陆',
+  'Jnd.noCheckLogin': '免验证登录',
   'Jnd.register': '注册',
   'Jnd.restPwd': '设置密码/忘记密码',
+  // member-controller
   'Jnd.buy': '购买会员',
   'Jnd.paycb': 'paycb',
   'Jnd.query': '查询会员购买结果',
+  // 主流程API
   'Jnd.activeApp': 'app首次激活',
+  'Jnd.browseProduct': '浏览产品',
   'Jnd.collection': '添加/取消收藏',
   'Jnd.getCashCoupon': '获取现金券列表',
+  'Jnd.getDiscoveryInfo': '获取发现信息',
   'Jnd.getHome': '获取页面元素',
   'Jnd.getLoanCategory': '获取贷款分类',
   'Jnd.getPage': '获取页面',
-  'Jnd.getServiceInfo': '获取用户信息',
+  'Jnd.getServiceInfo': '获取服务信息',
   'Jnd.getUserInfo': '获取用户信息',
+  'Jnd.getVersionControl': '获取版本控制',
+  'Jnd.getVersionUpdate': '获取版本升级',
   'Jnd.getVestType': '获取马甲版本',
-  'Jnd.memberSts': '判断是否是会员'
+  'Jnd.memberSts': '判断是否是会员',
+  'Jnd.uploadExpectAmount': '上送期望贷款金额',
+  'Jnd.uploadLatitude': '上送纬度信息',
+  // 麦广对外接口
+  'Jnd.decrypt': '解密数据',
+  'Jnd.hit': '麦广撞库接口',
+  'Jnd.hitData/{mobile}/{aesKey}': '获取撞库所需加密数据',
+  // 'Jnd.register': '麦广注册接口',
+  'Jnd.registerData/{mobile}/{aesKey}/{channel}/{appId}': '获取注册所需加密数据',
+  'Jnd.shengBeiHit': '省呗撞库接口',
+  'Jnd.shengBeiRegister': '省呗注册接口',
+  'Jnd.sign/{channelId}/{timeStamp}/{signKey}': '获取加签数据',
+  'Jnd.testHit': '麦广撞库测试接口',
+  'Jnd.testRegister': '麦广注册测试接口'
 }
 
 interfaceMap61 = Object.assign(interfaceMap61, jnd)
