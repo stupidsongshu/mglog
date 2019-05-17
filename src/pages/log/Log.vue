@@ -274,7 +274,7 @@ export default {
 
         arrNew[i].dateTime = arr[i].app.request.baseRequest.timeStamp
         arrNew[i].call = arr[i].app.request.baseRequest.call
-        arrNew[i].mobileNo = arr[i].app.request.baseRequest.args.head.mobileNo
+        arrNew[i].mobileNo = (arr[i].app.request.baseRequest.args.head || {}).mobileNo
 
         arrNew[i].app.response = arr[i].app.response
         arrNew[i].partner = arr[i].partner
