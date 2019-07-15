@@ -125,7 +125,7 @@ export default {
       },
       dateSelected: '',
       searchParams: {
-        project: 'lyd',
+        // project: 'lyd',
         minDate: '',
         maxDate: '',
         call: '',
@@ -416,7 +416,8 @@ export default {
       // }
       getLogDataReg(params).then(res => {
         var data = res.data
-        console.log(data)
+        // console.log(data)
+        // console.log(JSON.parse(JSON.stringify(res.data)))
 
         if (data.returnCode === '000000') {
           // data.list.forEach((item, index, arr) => {
@@ -431,7 +432,6 @@ export default {
           this.logRecord = this.jsonFormatterAppRes(this.logRecord)
           // 麦广服务器与合作方服务器
           this.logRecord = this.jsonFormatterPartnerReq(this.logRecord)
-          // console.log(this.logRecord) // TODO 20181107
           this.logRecord = this.jsonFormatterPartnerRes(this.logRecord)
         } else {
           this.$message({
